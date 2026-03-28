@@ -11,3 +11,12 @@ input:-webkit-autofill,
     -webkit-box-shadow: transparent 0 0 0px 1000px;
     transition: background-color 5000s ease-in-out 0s;
   }
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.scrollbar:hover {
+  scrollbar-color: #cbd5e1 transparent;
+}
