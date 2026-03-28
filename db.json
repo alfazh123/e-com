@@ -1,133 +1,140 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "name": "John Doe",
-      "phoneNumber": "089506754119",
-      "email": "johndoe@example.com",
-      "historyPurchase": [
-        {
-          "id": 1,
-          "ietmId": 1,
-          "itemName": "Pulsa 50K",
-          "itemPrice": 50000,
-          "itemType": "Pulsa",
-          "purchaseDate": "2024-06-01T10:00:00Z",
-          "capacity": 50000,
-          "duration": "N/A"
-        },
-        {
-          "id": 2,
-          "ietmId": 2,
-          "itemName": "Paket Data 10GB",
-          "itemPrice": 100000,
-          "itemType": "Paket Data",
-          "purchaseDate": "2024-06-15T15:30:00Z",
-          "capacity": 10000,
-          "duration": "30 days"
-        }
-      ]
-    }
-  ],
-  "items": [
-    {
-      "id": "1",
-      "itemName": "Pulsa 50K",
-      "itemPrice": 50000,
-      "itemType": "Pulsa",
-      "purchaseDate": "2024-06-01T10:00:00Z",
-      "capacity": 50000,
-      "duration": "N/A"
-    },
-    {
-      "id": "2",
-      "itemName": "Paket Data 10GB",
-      "itemPrice": 100000,
-      "itemType": "Paket Data",
-      "purchaseDate": "2024-06-15T15:30:00Z",
-      "capacity": 10000,
-      "duration": "30 days"
-    },
-    {
-      "id": "3",
-      "itemName": "Pulsa 100K",
-      "itemPrice": 100000,
-      "itemType": "Pulsa",
-      "purchaseDate": "2024-06-20T12:00:00Z",
-      "capacity": 100000,
-      "duration": "N/A"
-    },
-    {
-      "id": "4",
-      "itemName": "Paket Data 20GB",
-      "itemPrice": 200000,
-      "itemType": "Paket Data",
-      "purchaseDate": "2024-06-25T18:45:00Z",
-      "capacity": 20000,
-      "duration": "30 days"
-    },
-    {
-      "id": "5",
-      "itemName": "Pulsa 200K",
-      "itemPrice": 200000,
-      "itemType": "Pulsa",
-      "purchaseDate": "2024-06-30T20:00:00Z",
-      "capacity": 200000,
-      "duration": "N/A"
-    },
-    {
-      "id": "6",
-      "itemName": "Paket Data 50GB",
-      "itemPrice": 500000,
-      "itemType": "Paket Data",
-      "purchaseDate": "2024-07-01T09:00:00Z",
-      "capacity": 50000,
-      "duration": "30 days"
-    },
-    {
-      "id": "7",
-      "itemName": "Pulsa 500K",
-      "itemPrice": 500000,
-      "itemType": "Pulsa",
-      "purchaseDate": "2024-07-05T14:30:00Z",
-      "capacity": 500000,
-      "duration": "N/A"
-    },
-    {
-      "id": "8",
-      "itemName": "Paket Data 100GB",
-      "itemPrice": 1000000,
-      "itemType": "Paket Data",
-      "purchaseDate": "2024-07-10T16:00:00Z",
-      "capacity": 100000,
-      "duration": "30 days"
-    }
-  ],
-  "promotions": [
-    {
-      "idPromotion": 1,
-      "promoCode": "DISKON10",
-      "description": "Diskon 10% untuk pembelian pertama",
-      "discountPercentage": 10,
-      "validUntil": "2024-12-31T23:59:59Z",
-      "id": "wYJwp4vfan8"
-    },
-    {
-      "idPromotion": 2,
-      "promoCode": "PULSA20",
-      "description": "Diskon 20% untuk pembelian pulsa",
-      "discountPercentage": 20,
-      "validUntil": "2024-12-31T23:59:59Z",
-      "id": "JI62sf_7MOQ"
-    },
-    {
-      "idPromotion": 3,
-      "promoCode": "DATA15",
-      "description": "Diskon 15% untuk pembelian paket data",
-      "discountPercentage": 15,
-      "validUntil": "2024-12-31T23:59:59Z",
-      "id": "5JSboa1I3gM"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+	"users": [
+		{
+			"id": "1",
+			"name": "John Doe",
+			"phoneNumber": "089506754119",
+			"email": "johndoe@example.com",
+			"historyPurchase": [
+				{
+					"id": 1,
+					"ietmId": 1,
+					"itemName": "Pulsa 50K",
+					"itemPrice": 50000,
+					"itemType": "pulsa",
+					"purchaseDate": "2024-06-01T10:00:00Z",
+					"capacity": 50000,
+					"duration": "N/A"
+				},
+				{
+					"id": 2,
+					"ietmId": 2,
+					"itemName": "Paket Data 10GB",
+					"itemPrice": 100000,
+					"itemType": "data",
+					"purchaseDate": "2024-06-15T15:30:00Z",
+					"capacity": 10000,
+					"duration": "30 days"
+				}
+			]
+		},
+		{
+			"name": "AHMD ",
+			"email": "alfazh@gmail.com",
+			"phoneNumber": "089506754111",
+			"history": [],
+			"id": "6I1ST8IPeR8"
+		}
+	],
+	"items": [
+		{
+			"id": "1",
+			"itemName": "Pulsa 50K",
+			"itemPrice": 50000,
+			"itemType": "pulsa",
+			"purchaseDate": "2024-06-01T10:00:00Z",
+			"capacity": 50000,
+			"duration": "N/A"
+		},
+		{
+			"id": "2",
+			"itemName": "Paket Data 10GB",
+			"itemPrice": 100000,
+			"itemType": "data",
+			"purchaseDate": "2024-06-15T15:30:00Z",
+			"capacity": 10000,
+			"duration": "30 days"
+		},
+		{
+			"id": "3",
+			"itemName": "Pulsa 100K",
+			"itemPrice": 100000,
+			"itemType": "pulsa",
+			"purchaseDate": "2024-06-20T12:00:00Z",
+			"capacity": 100000,
+			"duration": "N/A"
+		},
+		{
+			"id": "4",
+			"itemName": "Paket Data 20GB",
+			"itemPrice": 200000,
+			"itemType": "data",
+			"purchaseDate": "2024-06-25T18:45:00Z",
+			"capacity": 20000,
+			"duration": "30 days"
+		},
+		{
+			"id": "5",
+			"itemName": "Pulsa 200K",
+			"itemPrice": 200000,
+			"itemType": "pulsa",
+			"purchaseDate": "2024-06-30T20:00:00Z",
+			"capacity": 200000,
+			"duration": "N/A"
+		},
+		{
+			"id": "6",
+			"itemName": "Paket Data 50GB",
+			"itemPrice": 500000,
+			"itemType": "data",
+			"purchaseDate": "2024-07-01T09:00:00Z",
+			"capacity": 50000,
+			"duration": "30 days"
+		},
+		{
+			"id": "7",
+			"itemName": "Pulsa 500K",
+			"itemPrice": 500000,
+			"itemType": "pulsa",
+			"purchaseDate": "2024-07-05T14:30:00Z",
+			"capacity": 500000,
+			"duration": "N/A"
+		},
+		{
+			"id": "8",
+			"itemName": "Paket Data 100GB",
+			"itemPrice": 1000000,
+			"itemType": "data",
+			"purchaseDate": "2024-07-10T16:00:00Z",
+			"capacity": 100000,
+			"duration": "30 days"
+		}
+	],
+	"promotions": [
+		{
+			"idPromotion": 1,
+			"promoCode": "DISKON10",
+			"description": "Diskon 10% untuk pembelian pertama",
+			"discountPercentage": 10,
+			"validUntil": "2024-12-31T23:59:59Z",
+			"id": "wYJwp4vfan8"
+		},
+		{
+			"idPromotion": 2,
+			"promoCode": "PULSA20",
+			"description": "Diskon 20% untuk pembelian pulsa",
+			"discountPercentage": 20,
+			"validUntil": "2024-12-31T23:59:59Z",
+			"id": "JI62sf_7MOQ"
+		},
+		{
+			"idPromotion": 3,
+			"promoCode": "DATA15",
+			"description": "Diskon 15% untuk pembelian paket data",
+			"discountPercentage": 15,
+			"validUntil": "2024-12-31T23:59:59Z",
+			"id": "5JSboa1I3gM"
+		}
+	],
+	"$schema": "./node_modules/json-server/schema.json"
 }
