@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { ProductType } from "~/type";
+import type { ProductProps } from "~/type";
 import ProductCard from "./productCard";
 import { CircularProgress } from "@mui/material";
 
@@ -8,7 +8,7 @@ export default function ProductList({
 }: {
 	itemType: "pulsa" | "data";
 }) {
-	const [products, setProducts] = useState<ProductType[]>([]);
+	const [products, setProducts] = useState<ProductProps[]>([]);
 
 	useEffect(() => {
 		const fetchProducts = async () => {

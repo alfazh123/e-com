@@ -1,9 +1,9 @@
 import { History, Logout, Person } from "@mui/icons-material";
 import { MenuItem } from "@mui/material";
 import { useState } from "react";
-import type { UserType } from "~/type";
+import type { UserProps } from "~/type";
 
-export default function Navbar({ user }: { user?: UserType }) {
+export default function Navbar({ user }: { user?: UserProps }) {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 	const [open, setOpen] = useState(false);
 

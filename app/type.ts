@@ -1,41 +1,40 @@
-interface UserType {
-    name: string;
-    phoneNumber: string;
-    email: string;
-    history: HistoryPurchaseType[];
+export interface UserProps {
+	id: string;
+	name: string;
+	phoneNumber: string;
+	email: string;
+	history: HistoryPurchaseProps[];
+	langgananAktif: {
+		pulsa: number;
+		data: number;
+		masaAktif: string;
+	};
 }
 
-interface HistoryPurchaseType {
-    itemName: string;
-    itemType: "pulsa" | "data";
-    price: number;
-    date: string;
-    duration: number | null;
-    capacity: string;
+export interface HistoryPurchaseProps {
+	itemName: string;
+	itemType: "pulsa" | "data";
+	price: number;
+	date: string;
+	duration: number | null;
+	capacity: string;
 }
 
-interface PromoType {
-    promoName: string,
-    promoCode: string,
-    description: string,
-    discountPercentage: number,
-    validUntil: string,
-    image?: string
+export interface PromoProps {
+	promoName: string;
+	promoCode: string;
+	description: string;
+	discountPercentage: number;
+	validUntil: string;
+	image?: string;
 }
 
-interface ProductType {
-    id: string,
-    itemName: string,
-    itemPrice: number,
-    itemType: "pulsa" | "data",
-    purchaseDate: string,
-    capacity: number,
-    duration: string | null
-}
-
-export type {
-    UserType ,
-    HistoryPurchaseType,
-    PromoType,
-    ProductType
+export interface ProductProps {
+	id: string;
+	itemName: string;
+	itemPrice: number;
+	itemType: "pulsa" | "data";
+	purchaseDate: string;
+	capacity: number;
+	duration: string | null;
 }

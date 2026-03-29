@@ -1,9 +1,9 @@
 import { CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
-import type { PromoType } from "~/type";
+import type { PromoProps } from "~/type";
 
 export default function PromoList() {
-	const [promo, setPromo] = useState<PromoType[]>([]);
+	const [promo, setPromo] = useState<PromoProps[]>([]);
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	useEffect(() => {

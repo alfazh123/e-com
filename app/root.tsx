@@ -14,7 +14,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/navbar";
 import { useEffect, useState } from "react";
-import type { UserType } from "./type";
+import type { UserProps } from "./type";
 import Footer from "./components/footer";
 
 export const links: Route.LinksFunction = () => [
@@ -31,7 +31,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<UserType | null>(null);
+  const [user, setUser] = useState<UserProps | null>(null);
 
 	useEffect(() => {
 		const user = localStorage.getItem("user");
