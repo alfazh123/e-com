@@ -4,6 +4,11 @@
 			"id": "1",
 			"name": "John Doe",
 			"phoneNumber": "089506754119",
+			"langgananAktif": {
+				"pulsa": 50000,
+				"data": 10000,
+				"masaAktif": "2024-07-01T00:00:00Z"
+			},
 			"email": "johndoe@example.com",
 			"historyPurchase": [
 				{
@@ -32,6 +37,11 @@
 			"name": "AHMD ",
 			"email": "alfazh@gmail.com",
 			"phoneNumber": "089506754111",
+			"langgananAktif": {
+				"pulsa": 0,
+				"data": 0,
+				"masaAktif": "2024-07-01T00:00:00Z"
+			},
 			"history": [],
 			"id": "6I1ST8IPeR8"
 		}
