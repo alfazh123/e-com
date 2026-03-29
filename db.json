@@ -42,7 +42,6 @@
 			"itemName": "Pulsa 50K",
 			"itemPrice": 50000,
 			"itemType": "pulsa",
-			"purchaseDate": "2024-06-01T10:00:00Z",
 			"capacity": 50000,
 			"duration": "N/A"
 		},
@@ -51,7 +50,6 @@
 			"itemName": "Paket Data 10GB",
 			"itemPrice": 100000,
 			"itemType": "data",
-			"purchaseDate": "2024-06-15T15:30:00Z",
 			"capacity": 10000,
 			"duration": "30 days"
 		},
@@ -60,7 +58,6 @@
 			"itemName": "Pulsa 100K",
 			"itemPrice": 100000,
 			"itemType": "pulsa",
-			"purchaseDate": "2024-06-20T12:00:00Z",
 			"capacity": 100000,
 			"duration": "N/A"
 		},
@@ -69,7 +66,6 @@
 			"itemName": "Paket Data 20GB",
 			"itemPrice": 200000,
 			"itemType": "data",
-			"purchaseDate": "2024-06-25T18:45:00Z",
 			"capacity": 20000,
 			"duration": "30 days"
 		},
@@ -78,7 +74,6 @@
 			"itemName": "Pulsa 200K",
 			"itemPrice": 200000,
 			"itemType": "pulsa",
-			"purchaseDate": "2024-06-30T20:00:00Z",
 			"capacity": 200000,
 			"duration": "N/A"
 		},
@@ -87,7 +82,6 @@
 			"itemName": "Paket Data 50GB",
 			"itemPrice": 500000,
 			"itemType": "data",
-			"purchaseDate": "2024-07-01T09:00:00Z",
 			"capacity": 50000,
 			"duration": "30 days"
 		},
@@ -96,7 +90,6 @@
 			"itemName": "Pulsa 500K",
 			"itemPrice": 500000,
 			"itemType": "pulsa",
-			"purchaseDate": "2024-07-05T14:30:00Z",
 			"capacity": 500000,
 			"duration": "N/A"
 		},
@@ -105,9 +98,72 @@
 			"itemName": "Paket Data 100GB",
 			"itemPrice": 1000000,
 			"itemType": "data",
-			"purchaseDate": "2024-07-10T16:00:00Z",
 			"capacity": 100000,
 			"duration": "30 days"
+		},
+		{
+			"id": "9",
+			"itemName": "Paket Harian 2GB",
+			"itemPrice": 15000,
+			"itemType": "data",
+			"capacity": 2000,
+			"duration": "1 day"
+		},
+		{
+			"id": "10",
+			"itemName": "Paket Mingguan 10GB",
+			"itemPrice": 50000,
+			"itemType": "data",
+			"capacity": 10000,
+			"duration": "7 days"
+		},
+		{
+			"id": "11",
+			"itemName": "Paket Harian 1GB",
+			"itemPrice": 10000,
+			"itemType": "data",
+			"capacity": 1000,
+			"duration": "1 day"
+		},
+		{
+			"id": "12",
+			"itemName": "Paket Harian 3GB",
+			"itemPrice": 20000,
+			"itemType": "data",
+			"capacity": 3000,
+			"duration": "1 day"
+		},
+		{
+			"id": "13",
+			"itemName": "Paket Harian 5GB",
+			"itemPrice": 30000,
+			"itemType": "data",
+			"capacity": 5000,
+			"duration": "1 day"
+		},
+		{
+			"id": "14",
+			"itemName": "Paket Mingguan 5GB",
+			"itemPrice": 30000,
+			"itemType": "data",
+			"capacity": 5000,
+			"duration": "7 days"
+		},
+		{
+			"id": "15",
+			"itemName": "Paket Mingguan 15GB",
+			"itemPrice": 70000,
+			"itemType": "data",
+			"capacity": 15000,
+			"duration": "7 days"
+		},
+		{
+			"id": "16",
+			"itemName": "Paket Mingguan 25GB",
+			"itemPrice": 100000,
+			"itemType": "data",
+			"capacity": 25000,
+			"duration": "7 days"
 		}
 	],
 	"promotions": [
