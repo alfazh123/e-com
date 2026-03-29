@@ -15,6 +15,7 @@ import "./app.css";
 import Navbar from "./components/navbar";
 import { useEffect, useState } from "react";
 import type { UserType } from "./type";
+import Footer from "./components/footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -53,6 +54,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 					{/* Your app */}
 					<Navbar {...(user && { user })} />
 					{children}
+					<Footer />
 				</StyledEngineProvider>
 				<ScrollRestoration />
 				<Scripts />

@@ -5,6 +5,10 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input:-webkit-autofill,
   input:-webkit-autofill:hover, 
   input:-webkit-autofill:focus {
@@ -20,3 +24,4 @@ input:-webkit-autofill,
 .scrollbar:hover {
   scrollbar-color: #cbd5e1 transparent;
 }
+
