@@ -1,10 +1,11 @@
 import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
+	isRouteErrorResponse,
+	Links,
+	Meta,
+	Outlet,
+	Scripts,
+	ScrollRestoration,
+	useLocation,
 } from "react-router";
 
 import { StyledEngineProvider } from '@mui/material/styles';
@@ -32,13 +33,14 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<UserProps | null>(null);
+  const location = useLocation();
 
 	useEffect(() => {
 		const user = localStorage.getItem("user");
 		if (user) {
 			setUser(JSON.parse(user));
 		}
-	}, []);
+	}, [location.pathname]);
 
   return (
 		<html lang="en">
