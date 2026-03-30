@@ -1,5 +1,5 @@
 export interface UserProps {
-	id: string;
+	id?: string;
 	name: string;
 	phoneNumber: string;
 	email: string;
@@ -18,6 +18,7 @@ export interface HistoryPurchaseProps {
 	date: string;
 	duration: number | null;
 	capacity: number;
+	idItem: string;
 }
 
 export interface PromoProps {
