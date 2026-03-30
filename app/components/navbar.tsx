@@ -1,6 +1,6 @@
 import { History, Logout, Person } from "@mui/icons-material";
-import { MenuItem } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import type { UserProps } from "~/type";
 
 export default function Navbar({ user }: { user?: UserProps }) {
@@ -13,6 +13,7 @@ export default function Navbar({ user }: { user?: UserProps }) {
 			icon: <Person />,
 			onClick: () => {
 				setOpen(false);
+				window.location.href = "/profile";
 			},
 		},
 		{
@@ -20,14 +21,15 @@ export default function Navbar({ user }: { user?: UserProps }) {
 			icon: <History />,
 			onClick: () => {
 				setOpen(false);
+				window.location.href = "/history";
 			},
 		},
 		{
 			label: "Logout",
 			icon: <Logout />,
 			onClick: () => {
-				localStorage.removeItem("user");
-				window.location.href = "/login";
+				setOpen(false);
+				handleLogout();
 			},
 		},
 	];
@@ -89,7 +91,6 @@ export default function Navbar({ user }: { user?: UserProps }) {
 												key={item.label}
 												onClick={() => {
 													item.onClick();
-													handleClose();
 												}}
 												className="flex gap-2 h-10 m-4 px-1 items-center hover:bg-slate-200">
 												{item.icon}
@@ -99,28 +100,6 @@ export default function Navbar({ user }: { user?: UserProps }) {
 									</div>
 								</div>
 							)}
-							{/* <Menu
-                                id="basic-menu"
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleClose}
-                                slotProps={{
-                                    list: {
-                                        "aria-labelledby": "basic-button",
-                                    },
-                                    paper: {
-                                        sx: {
-                                            borderRadius: 3,
-                                            border: "1px solid #e2e8f0",
-                                            boxShadow: "0 10px 35px rgba(15, 23, 42, 0.2)",
-                                            mt: 1,
-                                        },
-                                    },
-                                }}
-                            >
-                                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                <MenuItem onClick={handleLogout}>Logout</MenuItem>
-                            </Menu> */}
 						</div>
 					) : (
 						<div className="flex items-center">

@@ -23,14 +23,17 @@ export default function Home() {
 				className="flex-1 flex flex-col items-center justify-center gap-4 text-center md:my-32 my-10">
 				<HookSection
 					title="Start now and get your benefits!"
+					imgurl="fast.jpg"
 					description="Join our community today and enjoy exclusive deals, special offers, and premium benefits that are available only to our valued members who trust us!"
 				/>
 				<HookSection
 					title="Watch films without buffering!"
+					imgurl="/game.jpg"
 					description="Experience seamless streaming with our high-speed internet packages, designed to keep you connected and entertained without interruptions. Say goodbye to buffering and hello to endless entertainment!"
 				/>
 				<HookSection
 					title="Enjoy your gaming without lag!"
+					imgurl="streaming.jpg"
 					description="Level up your gaming experience with our high-speed internet packages, designed to keep you connected and competitive without interruptions. Say goodbye to lag and hello to seamless gaming!"
 				/>
 			</div>
