@@ -17,7 +17,7 @@ export interface HistoryPurchaseProps {
 	price: number;
 	date: string;
 	duration: number | null;
-	capacity: string;
+	capacity: number;
 }
 
 export interface PromoProps {
