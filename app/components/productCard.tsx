@@ -23,13 +23,15 @@ export default function ProductCard({
 				<div
 					className={`flex flex-col gap-2 rounded overflow-hidden ${layout === "list" ? "justify-center" : "mb-3 "} `}>
 					<div
-						className={`${layout === "list" ? "hidden" : "flex"} w-full h-40 object-cover bg-gray-200`}
-					/>
-					<div>
-						<h3 className="font-semibold text-lg truncate">
-							{product.itemName}
-						</h3>
-						<p className="text-gray-600 truncate">{product.duration}</p>
+						className={`relative ${layout === "list" ? "hidden" : "flex"} w-full h-40 object-cover ${product.itemType === "pulsa" ? "bg-blue-100" : "bg-sky-200"} items-end justify-end text-right`}>
+						<div className="absolute w-32 h-32 bg-amber-200/20 -top-10 -left-20 rounded-4xl" />
+						<div className="absolute w-32 h-32 bg-amber-200/20 -top-10 -left-10 rounded-4xl" />
+						<div>
+							<h3 className="font-semibold text-xl truncate">
+								{product.itemName}
+							</h3>
+							<p className="text-gray-600 truncate">{product.duration}</p>
+						</div>
 					</div>
 				</div>
 				<div
