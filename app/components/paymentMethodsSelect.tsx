@@ -29,41 +29,40 @@ export default function PaymentMethodsSelect({product, user, paymentMethod, form
 	};
 
     return (
-        <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-semibold">Pilih Metode Pembayaran</h2>
-            <div className="flex- flex-col">
-                {paymentMethods.map((method) => (
-                    <div
-                        key={method.id}
-                        className={`flex items-center gap-4 mb-4 p-4 border rounded-lg hover:bg-gray-100 transition-colors ${method.id === "pulsa" && (!user?.langgananAktif || user.langgananAktif.pulsa <= 0) ? "cursor-not-allowed opacity-50" : "cursor-pointer"}`}>
-                        <input
-                            type="radio"
-                            name="paymentMethod"
-                            id={method.id}
-                            value={method.id}
-                            disabled={
-                                method.id === "pulsa" &&
-                                (!user?.langgananAktif || user.langgananAktif.pulsa <= 0)
-                            }
-                            checked={paymentMethod === method.id}
-                            onChange={handlePaymentMethodChange}
-                            className={`form-radio h-5 w-5 text-orange-500`}
-                        />
-                        <label htmlFor={method.id} className="text-lg">
-                            {method.name}
-                        </label>
-                        {method.id === "pulsa" && product && (
-                            <span className="ml-auto font-bold text-orange-600">
-                                {formatter.formatter.format(
-                                    user?.langgananAktif?.pulsa || 0,
-                                )}
-                            </span>
-                        )}
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
+			<div className="flex flex-col gap-4">
+				<h2 className="text-2xl font-semibold">Pilih Metode Pembayaran</h2>
+				<div className="flex- flex-col">
+					{paymentMethods.map((method) => (
+						<div
+							key={method.id}
+							className={`flex items-center gap-4 mb-4 p-4 border rounded-lg hover:bg-gray-100 transition-colors ${method.id === "pulsa" && (!user?.langgananAktif || user.langgananAktif.pulsa <= product.itemPrice) ? "cursor-not-allowed opacity-50" : "cursor-pointer"}`}>
+							<input
+								type="radio"
+								name="paymentMethod"
+								id={method.id}
+								value={method.id}
+								disabled={
+									method.id === "pulsa" &&
+									(!user?.langgananAktif ||
+										user.langgananAktif.pulsa <= product.itemPrice)
+								}
+								checked={paymentMethod === method.id}
+								onChange={handlePaymentMethodChange}
+								className={`form-radio h-5 w-5 text-orange-500`}
+							/>
+							<label htmlFor={method.id} className="text-lg">
+								{method.name}
+							</label>
+							{method.id === "pulsa" && product && (
+								<span className="ml-auto font-bold text-orange-600">
+									{formatter.formatter.format(user?.langgananAktif?.pulsa || 0)}
+								</span>
+							)}
+						</div>
+					))}
+				</div>
+			</div>
+		);
 }
 
 export function PaymentResume({product, formatter, payment, user}: {product: ProductProps, formatter: ReturnType<typeof useFormat>, payment: ReturnType<typeof usePayment>, user: UserProps }) {

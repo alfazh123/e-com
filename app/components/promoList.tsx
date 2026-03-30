@@ -68,8 +68,10 @@ export default function PromoList() {
 											alt={item.promoCode}
 											className="w-full h-full object-cover"
 										/>
-										<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-											<div className="text-center text-white">
+										<div className="absolute inset-0 bg-linear-to-r from-black to-blue-800 bg-opacity-40 flex items-end justify-end">
+											<div className="text-right text-white p-12 w-full h-full relative">
+												<div className="bg-white/20 w-62 h-62 rounded-full absolute -top-20 -left-32" />
+												<div className="bg-sky-500/20 w-80 h-80 rounded-full absolute top-20 -left-20" />
 												<h2 className="text-3xl font-bold mb-2">
 													{item.description}
 												</h2>

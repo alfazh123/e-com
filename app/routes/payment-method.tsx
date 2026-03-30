@@ -103,7 +103,7 @@ export default function PaymentMethod() {
 
 	if (product.id === "") {
 		return (
-			<div className="flex justify-center items-center min-h-[50vh]">
+			<div className="flex justify-center items-center min-h-[50vh] mt-30">
 				<Typography variant="h6" component="div">
 					<CircularProgress size={100} color="inherit" />
 				</Typography>
